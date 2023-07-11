@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Geoportal</title>
 </head>
 
@@ -21,18 +22,145 @@
             </div>
           </fieldset>
     </div>
-    <nav>
-        <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">DRSRS</label>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">METADATA</a></li>
-        <li><a href="#">INFORMATION MANAGER</a></li>
-        <li><a href="#">INSPIRE</a></li>
-      </ul>
-    </nav>
+    <div>
+
+      <header id="nav-menu" aria-label="navigation bar">
+        <div class="container">
+          <div class="nav-start">
+            <a class="logo" href="/">
+              <img
+                src="/images/drsrs.jpg"
+                width="50"
+                height="50"
+                alt="Inc Logo"
+              /> 
+            </a>
+            <nav class="menu">
+              <ul class="menu-bar">
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown1"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="browse"
+                  >
+                    DATA
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown1" class="dropdown">
+                    <ul role="menu">
+                      <li>
+                        <span class="dropdown-link-title">LAYERS</span>
+                      </li>
+                      <li>
+                        <span class="dropdown-link-title">DOCUMENTS</span>
+                      </li>
+                      <li>
+                        <span class="dropdown-link-title">REMOTE SERVICES</span>
+                      </li>
+                    
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown2"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="discover"
+                  >
+                    MAPS
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown2" class="dropdown">
+                    <ul role="menu">
+                      <li>
+                        <span class="dropdown-link-title">EXPLORE MAPS</span>
+                      </li>
+                      <li>
+                        <span class="dropdown-link-title">TERRIA MAPS</span>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="discover"
+                  >
+                    APPS
+                  </button></li>
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown3"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="discover"
+                  >
+                    ABOUT US
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown3" class="dropdown">
+                    <ul role="menu">
+                      <li>
+                        <span class="dropdown-link-title">PEOPLE</span>
+                      </li>
+                      <li>
+                        <span class="dropdown-link-title">GROUPS</span>
+                      </li>
+                      <li>
+                        <span class="dropdown-link-title">GROUP CATEGORIES</span>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </nav>
+          </div>
+         
+        </div>
+      </header>
+
+      <!-- <label class="logo">DRSRS</label>
+      <ul class="links">
+        <li>
+          <a class="active" href="#">DATA</a>
+          <i class="bx bxs-chevron-down data-arrow arrow"></i>
+          <ul class="data-sub-menu sub-menu">
+            <li><a href="#">LAYERS</a></li>
+            <li><a href="#">DOCUMENTS</a></li>
+            <li><a href="#">REMOTE SERVICES</a></li>
+          </ul>
+        </li>
+        <li><a href="#">MAPS</a>
+          <i class="bx bxs-chevron-down maps-arrow arrow"></i>
+          <ul class="maps-sub-menu sub-menu">
+            <li><a href="#">EXPLORE MAPS</a></li>
+            <li><a href="#">TERRIA MAP</a></li>
+          </ul>
+        </li>
+        <li><a href="#">APPS</a></li>
+        <li><a href="#">ABOUT</a>
+          <i class="bx bxs-chevron-down about-arrow arrow"></i>
+          <ul class="about-sub-menu sub-menu">
+            <li><a href="#">PEOPLE</a></li>
+            <li><a href="#">GROUPS</a></li>
+            <li><a href="#">GROUP CATEGORIES</a></li>
+          </ul>
+        </li>
+      </ul> -->
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
