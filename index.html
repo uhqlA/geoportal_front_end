@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!-- Header banner -->
     <div class="header">
         <fieldset class="field-container">
             <input type="text" placeholder="Search..." class="field" />
@@ -22,8 +23,7 @@
             </div>
           </fieldset>
     </div>
-    <div>
-
+    <!-- Navigation Bar -->
       <header id="nav-menu" aria-label="navigation bar">
         <div class="container">
           <div class="nav-start">
@@ -121,12 +121,22 @@
                   </div>
                 </li>
               </ul>
-
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-              </ul>
             </nav>
+            <div class="nav-end">
+              <div class="right-container">
+                <button class="btn btn-primary" style="color: white;">REGISTER</button>
+                <button class="btn btn-primary" style="color: white;">LOGIN</button>
+              </div>
+              </div>
+              <button
+                id="hamburger"
+                aria-label="hamburger"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="bx bx-menu" aria-hidden="true"></i>
+              </button>
+            </div>
           </div>
          
         </div>
@@ -160,7 +170,55 @@
           </ul>
         </li>
       </ul> -->
+
+
+  <!-- Body -->
+<div class="grid" style="margin-left: 30px;">
+  <div class="grid-item">
+    <div class="card">
+      <img class="card-img" src="/images/image1.jpg" alt="natural" />
+        <div class="card-content">
+          
+            <p class="card-text">Identifying and mapping natural resurces</p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+        </div>
+      
+    </div>
   </div>
+  <div class="grid-item">
+    <div class="card">
+      <img class="card-img" src="/images/image2.jpg" alt="land"/>
+        <div class="card-content">
+          <!-- <h1 class="card-header">Land Use</h1> -->
+            <p class="card-text">Monitoring changes in land use and cover</p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+        </div>
+    
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="card">
+      <img class="card-img" src="/images/image3.jpg" alt="ecosystems"/>
+        <div class="card-content">
+          <!-- <h1 class="card-header">Ecosystems</h1> -->
+            <p class="card-text">Assessing the health of ecosystems</p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+        </div>
+
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="card">
+      <img class="card-img" src="/images/image4.jpg" alt="environment"/>
+        <div class="card-content">
+          <!-- <h1 class="card-header">Environmental Risks</h1> -->
+            <p class="card-text">Identifying environmental risks and hazards</p>
+            <button class="card-btn">Visit <span>&rarr;</span></button>
+        </div>
+      
+    </div>
+  </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
