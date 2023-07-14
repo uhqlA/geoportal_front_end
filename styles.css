@@ -68,111 +68,6 @@ body {
   overflow: hidden;
 }
 
-.icon-close {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 75%;
-  height: 75%;
-  opacity: 0;
-  cursor: pointer;
-  transform: translateX(-200%);
-  border-radius: 50%;
-  transition: opacity 0.25s ease, transform 0.43s;
-  &:before {
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    border: 2px solid transparent;
-    border-top-color: #6078ea;
-    border-left-color: #6078ea;
-    border-bottom-color: #6078ea;
-    transition: opacity 0.2s ease;
-  }
-  .x-up {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 2px;
-      left: 3px;
-      width: 50%;
-      height: 2px;
-      background-color: #6078ea;
-      transform: rotate(45deg);
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 2px;
-      right: 0px;
-      width: 50%;
-      height: 2px;
-      background-color: #6078ea;
-      transform: rotate(-45deg);
-    }
-  }
-  .x-down {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 4px;
-      width: 50%;
-      height: 2px;
-      background-color: #6078ea;
-      transform: rotate(-45deg);
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      top: 5px;
-      right: 1px;
-      width: 50%;
-      height: 2px;
-      background-color: #6078ea;
-      transform: rotate(45deg);
-    }
-  }
-  .is-type & {
-    &:before {
-      opacity: 1;
-      animation: spin 0.85s infinite;
-    }
-    .x-up {
-      &:before,
-      &:after {
-        animation: color-1 0.85s infinite;
-      }
-      &:after {
-        animation-delay: 0.3s;
-      }
-    }
-    .x-down {
-      &:before,
-      &:after {
-        animation: color-1 0.85s infinite;
-      }
-      &:before {
-        animation-delay: 0.2s;
-      }
-      &:after {
-        animation-delay: 0.1s;
-      }
-    }
-  }
-}
-
 .icon-search {
   position: relative;
   top: 5px;
@@ -221,7 +116,7 @@ body {
   }
 }
 header {
-  background-color: #185475;
+  background-color: #31708E;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 ul {
@@ -235,7 +130,7 @@ a {
 
 button {
   border: none;
-  background-color: #185475;
+  background-color: #31708E;
   cursor: pointer;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -243,7 +138,7 @@ button {
 
 .btn {
   display: block;
-  background-color: #185475;
+  background-color: #31708E;
   color: #185475;
   text-align: center;
   padding: 0.6rem 1.4rem;
@@ -447,8 +342,8 @@ button {
 }
 
 .section {
-  background-color: #d5f0e9;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: #f4f8f7; */
+  font-family: "Poppins", sans-serif;
 }
 .h1 {
   text-align: center;
@@ -474,61 +369,49 @@ button {
   align-items: start;
 }
 .grid-item {
-  background-color: #185475;
+  background-color: #ffffff;
   margin-top: 50px;
   width: 20rem;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4rem 7rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
 }
 .grid-item:hover {
   transform: translateY(-0.5%);
-  box-shadow: 0 4rem 7rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4rem 7rem rgba(207, 203, 203, 0.5);
 }
 .card-img {
   display: block;
-  width: 20rem;
-  height: 10rem;
+ 
+  width: 19rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  height: 15rem;
   object-fit: cover;
 }
 .card-content {
   text-align: center;
-  height: 11rem;
+  height: 5rem;
   align-items: center;
+  margin-top: 2rem;
 }
 .card-header {
-  font-size: 2rem;
-  color: cornsilk;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #0a0b0b;
   margin-top: 0px;
 }
-.card-text {
+/* .card-text {
   font-size: 1.2rem;
   letter-spacing: 0.05rem;
-  /* line-height: 2.7; */
-  color: #f2f5f4;
+   line-height: 2.7; 
+  color: #0a0b0b;
   margin: 1rem;
-}
-.card-btn {
-  display: block;
-  width: 150px;
-  height: 40px;
-  border-radius: 5px;
-  font-size: 1.3rem;
-  text-align: center;
-  color: #f0ecec;
-  background-color: #39551f;
-  transition: 0.2s;
-  cursor: pointer;
-  letter-spacing: 0.1rem;
-  margin-top: 2px;
-  width: 100%;
-}
-.card-btn span {
-  margin-left: 1rem;
-  transition: 0.2s;
-}
+} */
+
 .card-btn:hover,
 .card-btn:active {
   background-color: #6078ea;
@@ -545,6 +428,7 @@ button {
     grid-gap: 3rem;
   }
 }
+
 @media (max-width: 1100px) {
   .container {
     padding: 1.2rem;
